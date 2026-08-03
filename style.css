@@ -1,0 +1,343 @@
+﻿  *{
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        padding-bottom: 20px;
+    }
+
+a {
+    color: #66b2b2;
+    text-decoration: none;
+}
+
+    p{
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    /* ----- Hilfsklassen -----*/
+
+    .standard-container {
+        max-width: 1080px;
+        margin: 0 auto;
+      
+    }
+
+.text-highlighted {
+    color: #052452;
+}
+
+.btn {
+    display: block;
+    font-size: 20px;
+    background-color: #66b2b2;
+    color: #052452;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 15px 0px;
+}
+
+    .btn:hover {
+        background-color: #052452;
+        color: white;
+    }
+    /* ----- Navigationsleiste -----*/
+
+#main-nav {
+    background-color: #66b2b2;
+}
+
+    #main-nav::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    #main-nav h1 {
+        font-size: 3rem;
+        float: left;
+        color: #052452;
+        padding-top: 20px;
+    }
+
+    #main-nav a {
+        color: white;
+    }
+
+    #main-nav ul {
+        float: right;
+        list-style: none;
+    }
+
+
+     #main-nav ul li {
+        float: left;
+     }
+
+     #main-nav ul li a {
+            display: block;
+            font-size: 24px;
+            padding: 20px;
+            text-align: center;
+      }
+
+        #main-nav ul li a:hover {
+            background-color: #052452;
+            color: white;
+            height: 95px;
+        }
+
+        #main-nav ul li a.active-page {
+            background-color: #052452;
+            color: white;
+            height: 95px;
+        }
+
+
+
+         /* ----- Wilkommens Sektion -----*/
+
+      #welcome {
+          background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../slike/pozadina.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          min-height: 500px;
+      }
+
+      #welcome::after{
+          content: "";
+          display: block;
+          clear: both;
+      }
+
+      #welcome .welcome-content {
+          float: right;
+          width: 70%;
+          color: white;
+          padding: 130px 50px;
+      }
+      #welcome .welcome-img{
+          float: left;
+          width: 30%;
+          padding-top: 40px;
+      }
+      #welcome .welcome-img img {
+          border-radius: 50%;
+          width: 180px;
+          height: 400px;
+      }
+
+      #welcome .welcome-content h2{
+          font-size: 40px;
+      }
+
+/* ----- About Sektion -----*/
+
+        #about {
+        background-color: #66b2b2;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        }
+       #about::after{
+           content: "";
+           display: block;
+           clear: both;
+       }
+
+
+      #about .about-content {
+           float: left;
+           width: 70%;
+           color: white;
+           padding: 20px;
+      }
+
+      #about .about-img {
+           float: left;
+           width: 30%;
+           padding: 20px;
+      }
+
+      #about .about-img img{
+           width: 100%;
+           border-radius: 10px;
+      }
+
+      #about .about-content h2 {
+          font-size: 40px;
+      }
+
+/* ----- Skill Sektion -----*/
+
+       #skills {
+            padding-top: 40px;
+            padding-bottom: 40px;
+       }
+
+       #skills::after{
+           content:"";
+           display: block;
+           clear: both;
+       }
+
+        #skills .skill {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+            padding: 35px;
+        }
+
+        #skills .material-symbols-outlined {
+            font-size: 100px;
+            color: #052452;
+        }
+        #skills .marker {
+            background: #c8c3b4;
+            padding: 0px;
+        }
+
+/* ----- Footer -----*/
+
+        #main-footer {
+            background-color: #66b2b2;
+            min-height: 120px;
+            padding: 52px;
+        }
+
+        #main-footer p {
+            text-align: center;
+            color: white;
+        }
+
+        #main-footer p a {
+            color: white;
+        }
+
+
+/* ----- Kontakt -----*/
+        
+        #contact-options {
+            margin-top: -150px;
+            padding-bottom: 100px;
+        }
+
+        #contact-heading {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../slike/pozadina.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px;
+        }
+
+        #contact-heading .heading-content{
+            color: white;
+            padding: 130px 0px;
+        }
+
+        #contact-heading .heading-content h2{
+            font-size: 40px;
+        }
+
+        #contact-heading .heading-content p {
+             font-size: 20px;
+        }
+
+        #contact-options .contact-option {
+            float: left;
+            width: 31.33%;
+            margin: 1%;
+            text-align: center;
+            padding: 35px;
+            background-color: #66b2b2;
+            min-height: 300px;
+            border-radius: 10px;
+        }
+
+        #contact-options:after{
+            content:"";
+            display: block;
+            clear: both;
+        }
+
+        #contact-options .contact-icon{
+            height: 40px;
+            width: 40px;
+        }
+
+        #contact-options .contact-option h3 {
+            color: #052452;
+            font-size: 25px;
+            padding-top: 15px;
+        }
+        #contact-options .contact-option p{
+            color: white;
+           line-height: 1.7em;
+        }
+
+/* ----- Datenschutz -----*/
+
+
+        #daten-heading {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../slike/pozadina.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px;
+        }
+
+        #daten-heading .daten-content {
+            color: white;
+            padding-top: 130px;
+            padding-bottom: 50px;
+        }
+
+        #daten-heading .daten-content h2 {
+            font-size: 40px;
+        }
+
+        #daten-heading .daten-content p {
+            font-size: 18px;
+            padding: 20px;
+            line-height: 1.4em;
+        }
+
+            #daten-heading .material-symbols-outlined {
+                font-size: 100px;
+                color: #052452;
+                padding: 40px;
+            }
+
+/* ----- Impressum -----*/
+
+        #impressum-id {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../slike/pozadina.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px;
+        }
+
+        #impressum-id .impressum-content {
+            color: white;
+            padding-top: 130px;
+            padding-bottom: 50px;
+        }
+
+        #impressum-id .impressum-content h2 {
+            font-size: 40px;
+        }
+
+        #impressum-id .impressum-content p {
+            font-size: 18px;
+            padding: 20px;
+            line-height: 1.4em;
+        }
+        #impressum-id .material-symbols-outlined {
+            font-size: 100px;
+            color: #052452;
+            padding: 40px;
+        }
+
+        
