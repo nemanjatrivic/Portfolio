@@ -194,32 +194,31 @@ a {
 
 /* ----- Skill Sektion -----*/
 
-       #skills {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-       }
+     #skills {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+ }
 
-       #skills::after{
-           content:"";
-           display: block;
-           clear: both;
-       }
+  #skills .standard-container {
+      display:flex;
+      justify-content:space-between;
+      gap:2rem;
+  }
 
-        #skills .skill {
-            float: left;
-            width: 33.33%;
-            text-align: center;
-            padding: 2rem;
-        }
+  #skills.skill{
+      flex:1;
+      text-align: center;
+      padding: 2rem;
+  }
 
-        #skills .material-symbols-outlined {
-            font-size: 7rem;
-            color: #052452;
-        }
-        #skills .marker {
-            background: #c8c3b4;
-            padding: 0px;
-        }
+  #skills .material-symbols-outlined {
+      font-size: 7rem;
+      color: #052452;
+  }
+  #skills .marker {
+      background: #c8c3b4;
+      padding: 0px;
+  }
 
 /* ----- Footer -----*/
 
@@ -400,5 +399,20 @@ a {
 
     #about .about-content {
         padding: 1rem;
+    }
+}
+@media (max-width:768px) {
+
+    #skills .standard-container {
+        flex-direction: column;
+    }
+
+    #skills .skill {
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    #skills .material-symbols-outlined {
+        font-size: 4rem;
     }
 }
