@@ -414,7 +414,14 @@ a {
         padding: 1.5rem;
         width: 100%;
         max-width:420px;
-        margin: 0 auto;
+        margin: auto;
+       flex: 1;
+           
+          
+            box-sizing: border-box;
+            background: #79c9cf;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,.2);
     }
 
     #skills .material-symbols-outlined {
