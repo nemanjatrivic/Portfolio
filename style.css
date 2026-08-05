@@ -22,9 +22,11 @@ a {
     /* ----- Hilfsklassen -----*/
 
     .standard-container {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
-        margin: auto;
+        margin: 0 auto;
+        max-width: 1200px;
+        padding: 0 0rem;
       
     }
 
@@ -108,6 +110,7 @@ a {
           background-repeat: no-repeat;
           background-size: cover;
           min-height: 40rem;
+          font-size: 100%;
       }
 
       #welcome::after{
@@ -117,16 +120,15 @@ a {
       }
 
       #welcome .welcome-content {
-          width: 70%;
+          flex: 1;
           color: white;
+          padding-left:4rem;
           padding: 5rem 3rem;
       }
 
       #welcome .welcome-img{
-          width: 25%;
+          flex: 0 0 22rem;
           display: flex;
-          justify-content: center;
-          align-items: center;
       }
 
       #welcome .welcome-img img {
@@ -142,17 +144,15 @@ a {
           justify-content:space-between;
       }
 
-      #welcome .welcome-content h2{
-          font-size: 2rem;
-      }
       #welcome .welcome-content h2 {
-       font-size: 3rem; /* Desktop */
+            font-size: 3rem; 
       }
 
       #welcome .welcome-content p {
-       font-size: 1.2rem;
+            font-size: 1.2rem;
       }
      
+
 /* ----- About Sektion -----*/
 
         #about {
@@ -188,43 +188,41 @@ a {
           justify-content: space-between;
           gap:3rem;
       }
- #about .about-content p{
-     font-size: 1.2rem;
- }
+      #about .about-content p{
+          font-size: 1.2rem;
+      }
 
 /* ----- Skill Sektion -----*/
 
-     #skills {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
- }
+       #skills {
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+       }
 
-  #skills .standard-container {
-      display:flex;
-      justify-content:space-between;
-      gap:2rem;
-  }
+        #skills .standard-container {
+            display:flex;
+            justify-content:space-between;
+            gap:2rem;
+        }
 
-  #skills.skill {
-    flex: 1;
-    text-align: center;
-    padding: 2rem;
-    flex: 1;
-    text-align: center;
-    padding: 2rem;
-    background: #79c9cf;
-    border-radius: 1rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,.2);
-}
+        #skills .skill {
+            flex: 1;
+            text-align: center;
+            padding: 1rem;
+            box-sizing: border-box;
+            background: #79c9cf;
+            border-radius: 1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,.2);
+        }
 
-  #skills .material-symbols-outlined {
-      font-size: 7rem;
-      color: #052452;
-  }
-  #skills .marker {
-      background: #c8c3b4;
-      padding: 0px;
-  }
+        #skills .material-symbols-outlined {
+            font-size: 7rem;
+            color: #052452;
+        }
+        #skills .marker {
+           background:#79c9cf;
+            padding: 0px;
+        }
 
 /* ----- Footer -----*/
 
@@ -367,7 +365,7 @@ a {
 
 @media (max-width: 768px) {
 
-    #welcome .container {
+    #welcome .standard-container {
         flex-direction: column;
         text-align: center;
     }
@@ -382,19 +380,16 @@ a {
         padding: 2rem;
     }
 
-        #welcome .welcome-content h2 {
-            font-size: 2rem;
-        }
+    #welcome .welcome-content h2 {
+        font-size: 2rem;
+    }
 
-        #welcome .welcome-content p {
-            font-size: 1rem;
-        }
-}
-@media (max-width:768px) {
+    #welcome .welcome-content p {
+        font-size: 1rem;
+    }
 
     #about .standard-container {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column;     
     }
 
     #about .about-img {
@@ -404,20 +399,22 @@ a {
     }
 
     #about .about-content {
+        text-align:left;
         padding: 1rem;
     }
-}
-@media (max-width:768px) {
 
     #skills .standard-container {
+        padding: 0 1rem;
         flex-direction: column;
         gap:2rem;
     }
 
     #skills .skill {
+        text-align:left;
+        padding: 1.5rem;
         width: 100%;
-        max-width:500px;
-        margin:auto;
+        max-width:420px;
+        margin: 0 auto;
     }
 
     #skills .material-symbols-outlined {
