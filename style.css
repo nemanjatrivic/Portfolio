@@ -365,19 +365,26 @@ a {
 
 @media (max-width: 768px) {
 
+   
     #welcome .standard-container {
+        display:flex;
         flex-direction: row;
-        text-align: center;
+        align-items: center;
+        gap:1rem;
     }
 
     #welcome .welcome-img {
-        width: 100%;
-        margin-top: 2rem;
+        
+        flex:0 0 auto;
+    }
+
+    #welcome .welcome-img img{
+        width:8rem;
     }
 
     #welcome .welcome-content {
-        width: 100%;
-        padding: 2rem;
+        flex:1;
+        padding: 0 0 0 1rem;
     }
 
     #welcome .welcome-content h2 {
@@ -398,6 +405,7 @@ a {
         max-width: 22rem;
     }
 
+
     #about .about-content {
         text-align:left;
         padding: 1rem;
@@ -414,17 +422,9 @@ a {
         padding: 1.5rem;
         width: 100%;
         max-width:420px;
-        margin: auto;
-       flex: 1;
-            box-sizing: border-box;
-            background: #79c9cf;
-            border-radius: 1rem;
-            box-shadow: 0 4px 10px rgba(0,0,0,.2);
+        margin: 0 auto;
     }
-#skills .marker {
-           background:#79c9cf;
-            padding: 0px;
-        }
+
     #skills .material-symbols-outlined {
         font-size: 4rem;
     }
