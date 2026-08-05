@@ -145,7 +145,14 @@ a {
       #welcome .welcome-content h2{
           font-size: 2rem;
       }
+      #welcome .welcome-content h2 {
+       font-size: 3rem; /* Desktop */
+      }
 
+      #welcome .welcome-content p {
+       font-size: 1.2rem;
+      }
+     
 /* ----- About Sektion -----*/
 
         #about {
@@ -181,6 +188,9 @@ a {
           justify-content: space-between;
           gap:3rem;
       }
+ #about .about-content p{
+     font-size: 1.2rem;
+ }
 
 /* ----- Skill Sektion -----*/
 
