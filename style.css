@@ -205,11 +205,17 @@ a {
       gap:2rem;
   }
 
-  #skills.skill{
-      flex:1;
-      text-align: center;
-      padding: 2rem;
-  }
+  #skills.skill {
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    flex: 1;
+    text-align: center;
+    padding: 2rem;
+    background: #79c9cf;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,.2);
+}
 
   #skills .material-symbols-outlined {
       font-size: 7rem;
@@ -405,11 +411,13 @@ a {
 
     #skills .standard-container {
         flex-direction: column;
+        gap:2rem;
     }
 
     #skills .skill {
         width: 100%;
-        padding: 1.5rem;
+        max-width:500px;
+        margin:auto;
     }
 
     #skills .material-symbols-outlined {
