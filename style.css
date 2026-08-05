@@ -1,4 +1,4 @@
-﻿  *{
+  *{
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
     padding: 0px;
@@ -6,7 +6,7 @@
     }
 
     h1, h2, h3, h4, h5, h6 {
-        padding-bottom: 20px;
+        padding-bottom: 1.5rem;
     }
 
 a {
@@ -15,14 +15,15 @@ a {
 }
 
     p{
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     /* ----- Hilfsklassen -----*/
 
     .standard-container {
-        max-width: 1080px;
+        max-width: 100%;
+        height: auto;
         margin: 0 auto;
       
     }
@@ -33,13 +34,13 @@ a {
 
 .btn {
     display: block;
-    font-size: 20px;
+    font-size: 1.5rem;
     background-color: #66b2b2;
     color: #052452;
-    padding: 10px 15px;
+    padding: 1rem 1rem;
     text-align: center;
     border-radius: 5px;
-    margin: 15px 0px;
+    margin: 1rem 0px;
 }
 
     .btn:hover {
@@ -81,21 +82,21 @@ a {
 
      #main-nav ul li a {
             display: block;
-            font-size: 24px;
-            padding: 20px;
+            font-size: 1.5rem;
+            padding: 2rem;
             text-align: center;
       }
 
         #main-nav ul li a:hover {
             background-color: #052452;
             color: white;
-            height: 95px;
+            height: auto;
         }
 
         #main-nav ul li a.active-page {
             background-color: #052452;
             color: white;
-            height: 95px;
+            height: auto;
         }
 
 
@@ -106,7 +107,7 @@ a {
           background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../slike/pozadina.jpg);
           background-repeat: no-repeat;
           background-size: cover;
-          min-height: 500px;
+          min-height: 40rem;
       }
 
       #welcome::after{
@@ -122,26 +123,27 @@ a {
           padding: 130px 50px;
       }
       #welcome .welcome-img{
+          margin-left: 1rem;
           float: left;
-          width: 30%;
+          width: 25%;
           padding-top: 40px;
       }
       #welcome .welcome-img img {
-          border-radius: 50%;
-          width: 180px;
-          height: 400px;
+          border-radius: 45%;
+          width: 11rem;
+          height: 25rem;
       }
 
       #welcome .welcome-content h2{
-          font-size: 40px;
+          font-size: 2rem;
       }
 
 /* ----- About Sektion -----*/
 
         #about {
         background-color: #66b2b2;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
         }
        #about::after{
            content: "";
@@ -154,29 +156,29 @@ a {
            float: left;
            width: 70%;
            color: white;
-           padding: 20px;
+           padding: 1.5rem;
       }
 
       #about .about-img {
            float: left;
            width: 30%;
-           padding: 20px;
+           padding: 1rem;
       }
 
       #about .about-img img{
            width: 100%;
-           border-radius: 10px;
+           border-radius: 1rem;
       }
 
       #about .about-content h2 {
-          font-size: 40px;
+          font-size: 2rem;
       }
 
 /* ----- Skill Sektion -----*/
 
        #skills {
-            padding-top: 40px;
-            padding-bottom: 40px;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
        }
 
        #skills::after{
@@ -189,11 +191,11 @@ a {
             float: left;
             width: 33.33%;
             text-align: center;
-            padding: 35px;
+            padding: 2rem;
         }
 
         #skills .material-symbols-outlined {
-            font-size: 100px;
+            font-size: 7rem;
             color: #052452;
         }
         #skills .marker {
@@ -205,8 +207,8 @@ a {
 
         #main-footer {
             background-color: #66b2b2;
-            min-height: 120px;
-            padding: 52px;
+            min-height: 8rem;
+            padding: 3rem;
         }
 
         #main-footer p {
