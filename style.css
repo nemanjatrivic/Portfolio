@@ -24,7 +24,7 @@ a {
     .standard-container {
         max-width: 100%;
         height: auto;
-        margin: 0 auto;
+        margin: auto;
       
     }
 
@@ -117,21 +117,29 @@ a {
       }
 
       #welcome .welcome-content {
-          float: right;
           width: 70%;
           color: white;
-          padding: 130px 50px;
+          padding: 5rem 3rem;
       }
+
       #welcome .welcome-img{
-          margin-left: 1rem;
-          float: left;
           width: 25%;
-          padding-top: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
       }
+
       #welcome .welcome-img img {
           border-radius: 45%;
-          width: 11rem;
-          height: 25rem;
+          width: 18rem;
+          height: auto;
+          max-width: 100%;
+      }
+
+      #welcome .standard-container{
+          display:flex;
+          align-items:center;
+          justify-content:space-between;
       }
 
       #welcome .welcome-content h2{
@@ -145,33 +153,33 @@ a {
         padding-top: 3rem;
         padding-bottom: 3rem;
         }
-       #about::after{
-           content: "";
-           display: block;
-           clear: both;
-       }
-
 
       #about .about-content {
-           float: left;
-           width: 70%;
+           flex:1;
            color: white;
            padding: 1.5rem;
       }
 
       #about .about-img {
-           float: left;
-           width: 30%;
-           padding: 1rem;
+          flex:0 0 22rem;
       }
 
       #about .about-img img{
            width: 100%;
            border-radius: 1rem;
+           height:auto;
+           display:block;
       }
 
       #about .about-content h2 {
           font-size: 2rem;
+      }
+
+      #about .standard-container{
+          display:flex;
+          align-items:center;
+          justify-content: space-between;
+          gap:3rem;
       }
 
 /* ----- Skill Sektion -----*/
@@ -342,4 +350,45 @@ a {
             padding: 40px;
         }
 
-        
+@media (max-width: 768px) {
+
+    #welcome .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #welcome .welcome-img {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    #welcome .welcome-content {
+        width: 100%;
+        padding: 2rem;
+    }
+
+        #welcome .welcome-content h2 {
+            font-size: 2rem;
+        }
+
+        #welcome .welcome-content p {
+            font-size: 1rem;
+        }
+}
+@media (max-width:768px) {
+
+    #about .standard-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #about .about-img {
+        flex: none;
+        width: 80%;
+        max-width: 22rem;
+    }
+
+    #about .about-content {
+        padding: 1rem;
+    }
+}
