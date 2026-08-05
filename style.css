@@ -366,7 +366,7 @@ a {
 @media (max-width: 768px) {
 
     #welcome .standard-container {
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 
