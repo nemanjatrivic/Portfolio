@@ -371,10 +371,11 @@ a {
         flex-direction: row;
         align-items: center;
         gap:1rem;
+        margin-top: 2rem;
     }
 
     #welcome .welcome-img {
-        
+        margim-top:2rem;
         flex:0 0 auto;
     }
 
