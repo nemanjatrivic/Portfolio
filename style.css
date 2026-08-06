@@ -243,9 +243,9 @@ a {
 
 
 /* ----- Kontakt -----*/
-        
+         
         #contact-options {
-            margin-top: -150px;
+            margin-top: -10rem;
             padding-bottom: 100px;
         }
 
@@ -268,22 +268,20 @@ a {
         #contact-heading .heading-content p {
              font-size: 20px;
         }
-
-        #contact-options .contact-option {
-            float: left;
-            width: 31.33%;
-            margin: 1%;
-            text-align: center;
-            padding: 35px;
-            background-color: #66b2b2;
-            min-height: 300px;
-            border-radius: 10px;
+        #contact-options .standard-container {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            flex-wrap: wrap;
         }
 
-        #contact-options:after{
-            content:"";
-            display: block;
-            clear: both;
+        #contact-options .contact-option {
+            flex: 1 1 18rem;
+            text-align:center;
+            padding:2rem;
+            background-color: #66b2b2;
+            min-height: 20rem;
+            border-radius: 10px;
         }
 
         #contact-options .contact-icon{
@@ -300,7 +298,7 @@ a {
             color: white;
            line-height: 1.7em;
         }
-
+       
 /* ----- Datenschutz -----*/
 
 
@@ -429,4 +427,11 @@ a {
     #skills .material-symbols-outlined {
         font-size: 4rem;
     }
+ #contact-options .standard-container {
+    flex-direction: column;
+}
+
+#contact-options .contact-option {
+    width: 100%;
+}
 }
