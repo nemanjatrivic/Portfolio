@@ -428,10 +428,15 @@ a {
         font-size: 4rem;
     }
  #contact-options .standard-container {
+    display:flex;
     flex-direction: column;
+    gap:1.5rem;
 }
 
 #contact-options .contact-option {
     width: 100%;
+    max-width:none;
+    margin:0;
+    padding:2rem;
 }
 }
